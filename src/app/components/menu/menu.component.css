@@ -1,0 +1,69 @@
+
+
+
+.container{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+table{ 
+    min-width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.mat-header-cell{
+    color:black;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mat-row:nth-child(even){
+    background-color: white;
+}
+
+.mat-row:nth-child(odd){
+    background-color:red;
+}
+
+.mat-row:nth-child(odd) .mat-cell{
+    color:white;
+}
+
+.mat-cell:first-letter{
+    text-transform: uppercase;
+}
+
+.mat-row:hover{
+    cursor: pointer;
+    box-shadow: inset 0 0 0 4px black;
+}
+
+.mat-form-field{
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 13px;
+    width: 20%;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+::ng-deep.mat-paginator{
+    width: 80%;
+    margin:auto;
+}
+
+::ng-deep.mat-form-field-label{
+    color: black !important;
+}
+
+::ng-deep.mat-form-field-underline{
+    background-color: black !important;
+}
+
+
+input{ 
+    color: black !important;
+}
