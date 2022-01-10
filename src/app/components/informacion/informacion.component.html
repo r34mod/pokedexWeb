@@ -1,0 +1,46 @@
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<body>
+<mat-card class="example-card">
+    <mat-card-header>
+        <img mat-card-avatar class="header-image" src="{{pokeimg}}">
+        <mat-card-title>{{pokename.name}}</mat-card-title>
+        <mat-card-subtitle>Numero: {{pokename.id}}</mat-card-subtitle>
+        
+    </mat-card-header>
+    
+    <br>
+    <button class="btn btn-secondary pull-left">
+        <a (click)="previous()">
+            <i class="fa fa-chevron-left"></i>
+        </a>
+    </button>
+    <button class="btn btn-secondary pull-right">
+        <a (click)="next()">
+            <i class="fa fa-chevron-right"></i>
+        </a>
+    </button>
+    <img mat-card-image src="{{pokeimg}}">
+    
+    <mat-card-content>
+        <mat-chip-list aria-label="Fish selection">
+            <mat-chip color="primary" selected>Tipo principal: {{poketipo}}</mat-chip>
+            
+            <mat-chip color="primary" selected>Ataque 1: {{pokehabilidad1}}</mat-chip>
+            <mat-chip class="accent" selected>Ataque 2: {{pokehabilidad2}}</mat-chip>
+            <mat-chip color="primary" selected>Peso: {{pokepeso}}</mat-chip>
+            <br>
+            <mat-chip color="primary" selected>
+                <a (click)="batalla()">
+                    <i class="fa fa-gamepad">VERSION SHINY</i>
+                </a>
+            </mat-chip>
+        </mat-chip-list>
+    </mat-card-content>
+    
+    <mat-card-actions>
+        <br><br>
+    </mat-card-actions>
+</mat-card>
+</body>
